@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping>
+    	<class name="personal.renault.model.Employee" table="employee">
+    		<id name="eid" column="eid">
+    			<generator class="native"/>
+    		</id>
+    		<property name="username" column="username" length="20"/>
+    		<property name="alias" column="alias" length="20"/>
+    		<property name="password" column="password" length="20"/>
+    		<property name="birthday" column="birthday" />    		
+    		<property name="joindate" column="joindate" />
+    		<property name="outdate" column="outdate" />
+    		<property name="phone" column="phone" length="20"/>
+    		<property name="isout" column="isout" />
+    		<property name="isadmin" column="isadmin" />
+    		<!-- 关联关系映射 -->
+    		<many-to-one name="department" class="personal.renault.model.Department" column="dno"/>
+
+    	</class>
+    </hibernate-mapping>
+  
