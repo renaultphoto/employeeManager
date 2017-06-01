@@ -4,18 +4,18 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 部门的实体类
+ * 锟斤拷锟脚碉拷实锟斤拷锟斤拷
  * @author Administrator
  *
  */
 public class Department {
-	//部门编号
+	//閮ㄩ棬ID
 	private Integer did;
-	//部门名称
+	//閮ㄩ棬鍚嶇О
 	private String dname;
-	//部门描述
+	//閮ㄩ棬鎻忚堪
 	private String description;
-	//下属员工
+	//鍛樺伐鍒楄〃
 	private Set<Employee> employees = new HashSet<Employee>();
 	public Integer getDid() {
 		return did;

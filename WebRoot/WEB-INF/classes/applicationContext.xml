@@ -50,17 +50,33 @@
            
  <!-- 配置Action的类 -->
  <!-- SCOPE的作用在于申明ACTION为多例模式 -->
+ 
+  <!-- 员工类ACTION -->
  <bean id="employeeAction" class="personal.renault.action.EmployeeAction" scope="prototype">
  	<!-- 手动注入Service -->
  	<property name="employeeService" ref="employeeService"/>
  </bean>
+  <!-- 部门类ACTION -->
+ <bean id="departmentAction" class="personal.renault.action.DepartmentAction" scope="prototype">
+ 	<!-- 手动注入Service -->
+ 	<property name="departmentService" ref="departmentService"/>
+ </bean>
+ 
  <!--配置业务层的类 -->
 <bean id="employeeService" class="personal.renault.serviceimpl.EmployeeServiceImpl">
-
-<property name="employeeDao" ref="employeeDao"/>
+	<property name="employeeDao" ref="employeeDao"/>
 </bean>
+
+<bean id="departmentService" class="personal.renault.serviceimpl.DepartmentServiceImpl">
+	<property name="departmentDao" ref="departmentDao"/>
+</bean>
+
 <!-- 配置Dao的类 -->
 <bean id="employeeDao" class="personal.renault.daoimpl.EmployeeDaoImpl">
+	<property name="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+<bean id="departmentDao" class="personal.renault.daoimpl.DepartmentDaoImpl">
 	<property name="sessionFactory" ref="sessionFactory"/>
 </bean>
 

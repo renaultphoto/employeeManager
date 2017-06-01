@@ -3,32 +3,32 @@ package personal.renault.model;
 import java.util.Date;
 
 /**
- * Ô±¹¤ÊµÌåÀà
+ * Ô±ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
  * @author Administrator
  *
  */
 public class Employee {
-	//Ô±¹¤±àºÅ
+	//ç”¨æˆ·ID	
 	private Integer eid;
-	//Ô±¹¤ÕËºÅ
+	//ç”¨æˆ·å
 	private String username;
-	//Ô±¹¤ĞÕÃû
+	//åˆ«å
 	private String alias;
-	//Ô±¹¤ÃÜÂë
+	//å¯†ç 
 	private String password;
-	//Ô±¹¤ÉúÈÕ
+	//ç”Ÿæ—¥
 	private Date birthday;
-	//Ô±¹¤ÈëÖ°ÈÕÆÚ
+	//åŠ å…¥æ—¥æœŸ
 	private Date joindate;
-	//Ô±¹¤ÀëÖ°ÈÕÆÚ
+	//ç¦»èŒæ—¥æœŸ
 	private Date outdate;
-	//Ô±¹¤ÊÖ»úºÅ
+	//æ‰‹æœºå·
 	private String phone;
-	//ÊÇ·ñÀëÖ°
+	//æ˜¯å¦ç¦»èŒ
 	private Integer isout;
-	//ÊÇ·ñ¹ÜÀíÔ±
+	//æ˜¯å¦æ˜¯ç®¡ç†å‘˜
 	private Integer isadmin;
-	//Ô±¹¤ËùÊô²¿ÃÅ
+	//éƒ¨é—¨
 	private Department department;
 	public Integer getEid() {
 		return eid;

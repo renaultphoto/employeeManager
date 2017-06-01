@@ -290,7 +290,7 @@
 
 								<span class="subject">
 
-								<span class="from">Bob Nilson</span>
+								<span class="from"><s:property value="#session.existEmployee.alias"/></span>
 
 								<span class="time">2 hrs</span>
 

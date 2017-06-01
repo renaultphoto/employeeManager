@@ -33,15 +33,15 @@ public class EmployeeAction extends ActionSupport implements ModelDriven<Employe
 		Employee existEmployee = employeeService.login(employee);
 		if(existEmployee == null){
 			this.addActionError("用户名或者密码错误");
-			return "index";
+			return "login";
 		}else{
 			ActionContext.getContext().getSession().put("existEmployee", existEmployee);
-			return "login";
+			return "index";
 		}
 	}
 
-	public String index(){
+	public String toLogin(){
 		System.out.println("login");
-		return "index";
+		return "login";
 	}
 }

@@ -8,14 +8,14 @@ import personal.renault.dao.EmployeeDao;
 import personal.renault.model.Employee;
 
 /**
- * 员工的dao实现类
+ * DAO
  * @author Administrator
  *
  */
 public  class EmployeeDaoImpl extends HibernateDaoSupport implements EmployeeDao{
 
 	/**
-	 * dao里面的验证用户方法
+	 * 閫氳繃鐢ㄦ埛鍚嶅拰瀵嗙爜鏌ユ壘鐢ㄦ埛
 	 */
 	@Override
 		public Employee findByUsernameAndPassword(Employee employee) {
